@@ -1,6 +1,6 @@
 # Windows
 
-- Instale o (Autohotkey 1.1)[https://www.autohotkey.com/]
+- Instale o [Autohotkey 1.1](https://www.autohotkey.com/)
 - Win + R e digite `shell:startup`
 - Adicione o arquivo 02-blizzard-ijkl.ahk na pasta
 
