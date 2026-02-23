@@ -1,0 +1,12 @@
+[Unit]
+Description=Evremap keyboard remapper
+After=local-fs.target
+
+[Service]
+ExecStart=/usr/local/bin/evremap remap /home/guel/.config/evremap/config.toml
+Restart=always
+RestartSec=2
+KillMode=process
+
+[Install]
+WantedBy=multi-user.target
