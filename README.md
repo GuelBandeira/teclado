@@ -10,6 +10,7 @@
 - Execute os comandos abaixo dentro do repositório
 
 ```bash
+sudo cp config.toml ~/.config/evremap/
 sudo cp evremap.service /usr/lib/systemd/system/
 sudo systemctl daemon-reload
 sudo systemctl enable evremap.service
