@@ -1,39 +1,37 @@
 ############################################
 # HUSKY GAMING Teclado Gamer Husky Blizzard
-# Magic Fn Layer (Caps = Modifier)
+# Magic Fn Layer (F24 = Modificador Invisível)
 ############################################
 
 device_name = "HUSKY GAMING Teclado Gamer Husky Blizzard"
 
 # Prevent CapsLock from toggling caps.
 # When tapped alone, it does nothing.
-# When held, it acts as a modifier layer.
+# Agora, quando segurado, ele emite um F24 fantasma em vez do CapsLock
 [[dual_role]]
 input = "KEY_CAPSLOCK"
-hold = ["KEY_CAPSLOCK"]
+hold = ["KEY_F24"]
 tap = []
 
 ################################
-# IJKL - Arrow Keys (while holding Caps)
+# IJKL - Arrow Keys (while holding Caps/F24)
 ################################
 
 [[remap]]
-input = ["KEY_CAPSLOCK", "KEY_I"]
+input = ["KEY_F24", "KEY_I"]
 output = ["KEY_UP"]
 
 [[remap]]
-input = ["KEY_CAPSLOCK", "KEY_K"]
+input = ["KEY_F24", "KEY_K"]
 output = ["KEY_DOWN"]
 
 [[remap]]
-input = ["KEY_CAPSLOCK", "KEY_J"]
+input = ["KEY_F24", "KEY_J"]
 output = ["KEY_LEFT"]
 
 [[remap]]
-input = ["KEY_CAPSLOCK", "KEY_L"]
+input = ["KEY_F24", "KEY_L"]
 output = ["KEY_RIGHT"]
-
-
 
 #####################################################
 # ESC behavior (PT-BR FIX)
@@ -41,7 +39,7 @@ output = ["KEY_RIGHT"]
 
 # CAPS + ESC = ESC real
 [[remap]]
-input = ["KEY_CAPSLOCK", "KEY_ESC"]
+input = ["KEY_F24", "KEY_ESC"]
 output = ["KEY_ESC"]
 
 # SHIFT + ESC = "
@@ -59,19 +57,23 @@ input = ["KEY_ESC"]
 output = ["KEY_GRAVE"]
 
 ################################
-# Backspace - Delete (while holding Caps)
+# Backspace - Delete (while holding Caps/F24)
 ################################
 
 [[remap]]
-input = ["KEY_CAPSLOCK", "KEY_BACKSPACE"]
+input = ["KEY_F24", "KEY_BACKSPACE"]
 output = ["KEY_DELETE"]
 
+#####################################################
+# HOME e END (Teclas [ e ])
+#####################################################
 
+# CAPS + [ = HOME (Início da linha)
 [[remap]]
-input = ["KEY_CAPSLOCK", "KEY_LEFTBRACE"]
-output = ["KEY_HOMEPAGE"]
-
-[[remap]]
-input = ["KEY_CAPSLOCK", "KEY_RIGHTBRACE"]
+input = ["KEY_F24", "KEY_RIGHTBRACE"]
 output = ["KEY_HOME"]
 
+# CAPS + ] = END (Fim da linha)
+[[remap]]
+input = ["KEY_F24", "KEY_BACKSLASH"]
+output = ["KEY_END"]
