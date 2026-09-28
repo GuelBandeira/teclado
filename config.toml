@@ -5,13 +5,12 @@
 
 device_name = "HUSKY GAMING Teclado Gamer Husky Blizzard"
 
-# Prevent CapsLock from toggling caps.
-# When tapped alone, it does nothing.
-# Agora, quando segurado, ele emite um F24 fantasma em vez do CapsLock
+# CapsLock funciona normalmente quando pressionado rapidamente (tap).
+# Quando segurado, ele emite um F24 fantasma (hold).
 [[dual_role]]
 input = "KEY_CAPSLOCK"
 hold = ["KEY_F24"]
-tap = []
+tap = ["KEY_CAPSLOCK"]
 
 ################################
 # IJKL - Arrow Keys (while holding Caps/F24)
